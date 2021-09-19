@@ -1,0 +1,10 @@
+
+RewriteEngine on
+
+RewriteCond %[REQUEST_FILENAME] !-f
+
+
+RewriteRule ^([^\.]+)$ $1.php [NC,L] 
+
+
+# //para buscar los archivos sin que se tone el url el .php
