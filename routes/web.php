@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 
@@ -14,75 +15,93 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-Route::get('/', function () {
-    // return view('layouts.welcome'); //seria dentro de la carpeta de layouts
-    return view('welcome');
-});
-
-Route::get('/profile',function(){
-return view('profile');
-
-
-});
 
 
 
-Route::get('/profile/editar',function(){
-    return "Estas editando";
-    
-    
-    });
 
 
-// http://localhost:8000/ver/10/email@sade y sale: estas viendo el perfil numero 10con el email email@sade
-
-// como hay 2 parametros si pones el http://localhost:8000/ver/10/ te sale error 
-
-Route::get('/ver/{id}','ProfileController@index');
+Route::get('/example','ExampleController@index');
 
 
-    // para no tener que poner cada vez profile como esta ahi directamente lo metes en un grupo
-
-                  // prefijo   // admin /alias /alias
-
-    Route:: group(['prefix' => 'admin','as' =>'admin'], function(){
-
-Route::get('/', 'AdminController@index');
-
-Route::get('/usuarios', 'UsersController@index');
-
-Route::post('/usuarios/edit', 'UsersController@EditarUsuario');
-
-Route::get('/productos', 'ProductosController@index');
-
-Route::post('/productos/all', 'ProductosController@all');
- 
-route::get('/productos/imprimir','ProductosController@imprimir');
-
-// Route::post('/usuarios', 'UsersController@store');  voy a usar Resources
-
-// Con Resource usas todo, el ver, editar, crear y eliminar
-
-Route::resource('usuarios','UsersController');
-
-//         /admin/usuario no es necesario
-
-Route::resource('productos','productosController');
+Route::post('/example','ExampleController@store')->name('example-create');
 
 
-    });
-    
-    
-    
-    
-    
-    
-    
-    
-Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::delete('/example','ExampleController@delete')->name('example-delete');
 
-Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::put('/example','ExampleController@update')->name('example-update');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

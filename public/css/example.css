@@ -1,0 +1,207 @@
+*{
+
+margin: 0;
+padding: 0;
+
+}
+
+body{
+ 
+  background-color: rgb(221, 49, 150);
+
+}
+
+.create{
+
+background-color: rgb(76, 47, 236);
+width: 300px;
+margin-top:110px;
+height: 460px;
+margin-left: 20px;
+border-radius: 30px;
+text-align: center;
+color:white;
+
+    
+}
+
+
+
+
+input{
+
+margin-top: 20px;
+width: 200px;
+height: 30px;
+margin-bottom: 10px;
+}
+
+select{
+
+  margin-top: 20px;
+  width: 200px;
+  height: 30px;
+  margin-bottom: 10px;
+
+}
+
+
+.createtext{
+
+  color:rgb(0, 0, 0);
+    
+  }
+
+.textdesc{
+height: 240px;
+font-size: 20px;
+width: 240px;
+}
+
+.buttoncreate{
+margin: 2%;
+padding: 2%;
+background-color: rgb(253, 112, 87);
+border-radius: 12px;
+cursor: pointer;
+padding-left: 6%;
+padding-right: 6%;
+}
+
+.buttoncreate:hover{
+
+
+background-color: rgb(64, 224, 125);
+
+}
+
+.update{
+
+  background-color: rgb(255, 168, 37);
+  width: 30%;
+
+  height: 320px;
+  margin-left: 2%;
+  margin-top: 2%;
+  border-radius: 30px;
+  text-align: center;
+  color:white;
+  
+}
+
+
+.postcomplet{
+
+  flex:9;
+  
+  display: flex;
+
+margin:30px;
+margin-left: 50px;
+
+width: 1200px;
+  
+  
+  flex-wrap: wrap;
+  
+ 
+}
+
+
+
+
+.comp{
+
+width: 100%;
+
+display: flex;
+
+}
+
+.update input{
+
+background: transparent;
+border:none;
+fill:none;
+font-size: 30px;
+
+}
+
+.update select{
+
+  background: transparent;
+  border:none;
+  fill:none;
+  font-size: 22px;
+  color:rgb(0, 0, 0);
+  }
+
+.update textarea{
+
+  background: transparent;
+  border:none;
+  fill:none;
+  font-size: 30px;
+  width: 280px;
+  height:120px;
+  }
+
+  
+
+
+   .bedit{
+padding: 4%;
+background-color: rgb(26, 194, 54);
+
+border-radius: 12px;
+cursor: pointer;
+height: 47px;
+width:70px ;
+   }
+
+   .bdelete{
+    padding: 4%;
+    background-color: rgb(255, 52, 52);
+    color:white;
+    margin-left: 10%;
+border-radius: 12px;
+height: 47px;
+width:70px ;
+cursor: pointer;
+       }
+
+       .btns{
+
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+
+
+       }
+
+       .bedit:hover{
+
+background-color: aqua
+
+       }
+
+       .bdelete:hover{
+background-color: blueviolet;
+
+
+       }
+
+
+       .message{
+
+background-color: rgb(34, 165, 78);
+width:300px;
+height: 200px;
+color:white;
+font-size: 30px;
+margin-top: 10%;
+height: 110px;
+border-radius: 10px;
+
+       }
