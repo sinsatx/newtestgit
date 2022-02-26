@@ -30,6 +30,7 @@
 
 
 
+<<<<<<< HEAD
 
 
 
@@ -245,6 +246,9 @@ Name:  <input type="text" class="form-control" name="name" placeholder="Nombre" 
 </div>
 
 
+=======
+<h1>Hello!</h1>
+>>>>>>> d3d3802003b9d787d77e7a14df3c1475241bb30f
 
 
 

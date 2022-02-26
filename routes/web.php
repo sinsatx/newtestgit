@@ -20,6 +20,7 @@ use Illuminate\Support\Facades\Auth;
 
 
 
+<<<<<<< HEAD
 Route::get('/example','ExampleController@index');
 
 
@@ -31,6 +32,9 @@ Route::delete('/example','ExampleController@delete')->name('example-delete');
 
 
 Route::put('/example','ExampleController@update')->name('example-update');
+=======
+Route::get('/','ExampleController@index');
+>>>>>>> d3d3802003b9d787d77e7a14df3c1475241bb30f
 
 
 

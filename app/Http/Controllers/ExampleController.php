@@ -3,7 +3,11 @@
 namespace App\Http\Controllers;
 
 
+<<<<<<< HEAD
 use App\Models\Tasks;
+=======
+
+>>>>>>> d3d3802003b9d787d77e7a14df3c1475241bb30f
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
@@ -20,11 +24,17 @@ class ExampleController extends Controller
     public function index()
     {
 
+<<<<<<< HEAD
         $tasks = Tasks::all();
      
     
         
      return view('example', compact('tasks'));
+=======
+      
+        
+     return view('example');
+>>>>>>> d3d3802003b9d787d77e7a14df3c1475241bb30f
         
 
         
@@ -70,6 +80,7 @@ class ExampleController extends Controller
 
 
 
+<<<<<<< HEAD
 public function store(Request $request)
 {
 
@@ -283,6 +294,8 @@ public function store(Request $request)
 
             
 
+=======
+>>>>>>> d3d3802003b9d787d77e7a14df3c1475241bb30f
 
 
         }
