@@ -8,17 +8,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <title>SB Admin 2 - Dashboard</title>
+    <link rel="shortcut icon" href="img/iconsinsa4.png">
+    <title> Admin Dashboard </title>
 
     <!-- Custom fonts for this template-->
     <link href="{{ asset('/dash/vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
-
+        <link href="{{ asset('css/products.css') }}" rel="stylesheet"> 
     <!-- Custom styles for this template-->
     <link href="{{ asset('/dash/css/sb-admin-2.min.css') }}" rel="stylesheet"> 
+    
+    <link rel="stylesheet" href="{{ asset('css/jquery-ui.css') }}">
     @yield('css')
     
    <!-- el asset es para los archivos fuera del public  hacerlo en todos  -->
@@ -64,7 +66,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; Your Website 2021</span>
+                        <span>Copyright &copy; SinsatoXP 2021</span>
                     </div>
                 </div>
             </footer>
@@ -126,6 +128,7 @@
     <script src="{{ asset('/dash/js/demo/chart-pie-demo.js') }}"></script>
 @yield('scripts')
 
+       
 
 </body>
 
